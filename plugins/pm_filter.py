@@ -1441,6 +1441,30 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         await searching_msg.delete()
         if not files:
             await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
+@app.on_callback_query(filters.regex("close_data"))
+async def mark_done_callback(client, callback_query: CallbackQuery):
+    msg = callback_query.message
+
+    try:
+        # original message se content aur user details nikaalna
+        lines = msg.text.splitlines()
+        content_name = lines[1].split(":", 1)[1].strip(" `")
+        user_name = lines[2].split(":", 1)[1].strip()
+        user_id = int(lines[3].split(":", 1)[1].strip())
+
+        # User ko DM bhejna
+        text = f"✅ **{content_name}** aapke request ke mutabiq bot mein add kar diya gaya hai.\n\nThanks for your request!"
+        await client.send_message(chat_id=user_id, text=text)
+
+        # Optional: confirmation to admin
+        await callback_query.answer("User ko notify kar diya gaya.", show_alert=True)
+
+        # Edit original message to show done
+        await msg.edit_text(f"✅ Request marked as done for {user_name} ({user_id})")
+
+    except Exception as e:
+        await callback_query.answer("User ko message bhejne mein error aaya.", show_alert=True)
+        print(e)
             if settings["spell_check"]:
                 ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
                 is_misspelled = await ai_spell_check(search)
