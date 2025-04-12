@@ -1,3 +1,4 @@
+from bot import JisshuBot as app
 import asyncio
 import re
 import math
