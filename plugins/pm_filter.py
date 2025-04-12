@@ -1476,7 +1476,7 @@ async def mark_done_callback(client, callback_query: CallbackQuery):
                     return await auto_filter(client, msg)
                 await ai_sts.delete()
                 return await advantage_spell_chok(msg)
-            return
+    return
     else:
         settings = await get_settings(msg.message.chat.id , pm_mode=pm_mode)
         message = msg.message.reply_to_message  # msg will be callback query
