@@ -17,3 +17,15 @@ async def handle_new_group(client: Client, message: Message):
             ])
             text = f"🆕 <b>New Group Added</b>\n\n<b>Group Name:</b> {chat_title}\n<b>ID:</b> <code>{chat_id}</code>"
             await client.send_message(REQ_CHANNEL, text, reply_markup=btn)
+@app.on_callback_query(filters.regex("^(approve|reject)_"))
+async def handle_group_approval(client, query):
+    action, group_id = query.data.split("_")
+    group_id = int(group_id)
+
+    if action == "approve":
+        approved_groups.add(group_id)
+        await query.edit_message_text("✅ Group Approved!")
+    else:
+        await query.edit_message_text("❌ Group Rejected.")
+
+    await query.answer("Done.")
