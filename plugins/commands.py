@@ -24,6 +24,12 @@ import traceback
 logger = logging.getLogger(__name__)
 movie_series_db = JsTopDB(DATABASE_URI)
 verification_ids = {}
+@app.on_message(filters.group & filters.command("start"))
+async def group_start(client, message):
+    if message.chat.id not in approved_groups:
+        await message.reply("⛔ This group is not approved to use this bot.")
+        return
+    await message.reply("✅ Bot is ready to serve!")
 
 # CHECK COMPONENTS FOLDER FOR MORE COMMANDS
 @Client.on_message(filters.command("invite") & filters.private & filters.user(ADMINS))
