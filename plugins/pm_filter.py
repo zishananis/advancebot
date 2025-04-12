@@ -1465,7 +1465,7 @@ async def mark_done_callback(client, callback_query: CallbackQuery):
     except Exception as e:
         await callback_query.answer("User ko message bhejne mein error aaya.", show_alert=True)
         print(e)
-            if settings["spell_check"]:
+        if settings["spell_check"]:
                 ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
                 is_misspelled = await ai_spell_check(search)
                 if is_misspelled:
