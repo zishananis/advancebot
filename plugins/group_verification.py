@@ -2,7 +2,7 @@ import json
 import os
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from Vps import app
+from bot import JisshuBot as app  # <- Correct this import
 from config import REQ_CHANNEL  # Make sure to define this in config.py
 
 # Load approved group IDs from file
