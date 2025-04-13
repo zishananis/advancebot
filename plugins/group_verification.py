@@ -2,11 +2,6 @@ import pymongo
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# -------------------- CONFIG --------------------
-API_ID = 123456  # <-- Replace with your API ID
-API_HASH = "your_api_hash"  # <-- Replace with your API HASH
-BOT_TOKEN = "your_bot_token"  # <-- Replace with your bot token
-
 DATABASE_URI = "mongodb+srv://150rs-buy-Barun-dey:150rs-buy-Barun-dey@cluster0.skj2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 ADMIN_IDS = [7348205141]
 LOG_CHANNEL = -1002497411601
