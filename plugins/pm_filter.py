@@ -1438,7 +1438,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         files, offset, total_results = await get_search_results(search)
         await searching_msg.delete()
         if not files:
-            await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
+            #await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
             g = await message.reply_text(text=f"Hello `{message.from_user.first_name}` 🙂. \n\n **🎬 𝗣𝗟𝗘𝗔𝗦𝗘 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗙𝗢𝗥𝗠𝗔𝗧 𝗕𝗘𝗟𝗢𝗪:** \n👇👇\n› ᴍᴀʀᴄᴏ 2024 ✅ \n› ᴍᴀʀᴄᴏ ✅\n› ᴍᴀʀᴄᴏ ᴍᴏᴠɪᴇ ❌\n› ᴍᴀʀᴄᴏ ʜɪɴᴅɪ ᴅᴜʙʙᴇᴅ ❌")
             await asyncio.sleep(20)
             await g.delete()
@@ -1451,7 +1451,8 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                     msg.text = is_misspelled
                     await ai_sts.delete()
                     return await auto_filter(client, msg)
-                await ai_sts.delete()
+                    await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID :**{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
+               # await ai_sts.delete()
                 return await advantage_spell_chok(msg)
             return
     else:
