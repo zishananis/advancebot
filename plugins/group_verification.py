@@ -3,9 +3,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API_ID = 24473292
-API_HASH = ee26e216938e9af2b9d3d0e635e2fb6b
-BOT_TOKEN = 7570232544:AAEPEmi6zeIHKDrWLCP30oZkDvetyDwGKXc
-DATABASE_URI = mongodb+srv://150rs-buy-Barun-dey:150rs-buy-Barun-dey@cluster0.skj2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+API_HASH = "ee26e216938e9af2b9d3d0e635e2fb6b"
+BOT_TOKEN = "7570232544:AAEPEmi6zeIHKDrWLCP30oZkDvetyDwGKXc"
+DATABASE_URI = "mongodb+srv://150rs-buy-Barun-dey:150rs-buy-Barun-dey@cluster0.skj2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 ADMIN_IDS = [7348205141]
 LOG_CHANNEL = -1002497411601
 
