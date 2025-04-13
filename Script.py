@@ -151,19 +151,17 @@ User - {}"""
     
     VERIFICATION_TEXT = """<b> ʜᴇʏ {},
 
-🎬 Apni Pasandida Movies Aur Web Series Ka Maza Lo! 🍿
+ᴛᴀᴘ ᴏɴ ᴛʜᴇ ✅ ᴠᴇʀɪꜰʏ ✅ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ
+ᴀᴄᴄᴇꜱꜱ ♾️ ꜰᴏʀ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ 🔄
 
-Ab bina rukawat, direct download aur latest content ka maza uthaiye — sirf hamari Movie Bot Membership ke sath! 💯
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 1/3 🟡
 
-✅ Har Naye Movie Ka Sabse Pehle Access!
-✅ Fast Download, Koi Wait Nahi!
-✅ Unlimited Entertainment, Non-stop Masti!
+ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
+ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
+ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
-🔥 Ab Der Kis Baat Ki? Apni Membership Abhi Lo!
-
-ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴꜱ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 😊
-
-💶 sᴇɴᴅ /plan ᴛᴏ ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ</b>"""
+ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
+<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
 
     VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -173,13 +171,17 @@ Ab bina rukawat, direct download aur latest content ka maza uthaiye — sirf ham
 
     SECOND_VERIFICATION_TEXT = """<b>👋 ʜᴇʏ {} {},
 
-📌 <u>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ, ᴛᴀᴘ ᴏɴ ᴛʜᴇ ᴠᴇʀɪꜰʏ ʟɪɴᴋ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ</u>
+ᴛᴀᴘ ᴏɴ ᴛʜᴇ ✅ ᴠᴇʀɪꜰʏ ✅ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ
+ᴀᴄᴄᴇꜱꜱ ♾️ ꜰᴏʀ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ 🔄
 
-#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 2/3
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 2/3 🟡
 
-ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴꜱ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 😊
+ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
+ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
+ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
-💶 sᴇɴᴅ /plan ᴛᴏ ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ</b>"""
+ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
+<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</b>"""
 
     SECOND_VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -188,12 +190,18 @@ Ab bina rukawat, direct download aur latest content ka maza uthaiye — sirf ham
 ɴᴏᴡ ʏᴏᴜ ʜᴀᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ɴᴇxᴛ <code>{}</code></b>"""
 
     THIRDT_VERIFICATION_TEXT = """<b>👋 ʜᴇʏ {},
-    
-📌 <u>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴛᴀᴘ ᴏɴ ᴛʜᴇ ᴠᴇʀɪꜰʏ ʟɪɴᴋ & ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ɴᴇxᴛ ꜰᴜʟʟ ᴅᴀʏ.</u>
+ᴛᴀᴘ ᴏɴ ᴛʜᴇ ✅ ᴠᴇʀɪꜰʏ ✅ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ
+ᴀᴄᴄᴇꜱꜱ ♾️ ꜰᴏʀ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ 🔄
 
-#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 3/3
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 3/3 🟡
 
-ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇs ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ sᴇʀᴠɪᴄᴇ (ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪꜰʏ)</b>"""
+ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
+ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
+ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
+
+ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
+<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide
+</b>"""
 
     THIRDT_VERIFY_COMPLETE_TEXT= """<b>👋 ʜᴇʏ {},
     
@@ -227,7 +235,17 @@ Ab bina rukawat, direct download aur latest content ka maza uthaiye — sirf ham
 ▫️ 7 ᴅᴀʏꜱ – ₹15 (₹2.14/day)
 ▫️ 15 ᴅᴀʏꜱ – ₹25 (₹1.67/day)
 ▫️ 30 ᴅᴀʏꜱ – ₹35 (₹1.17/day)
-▫️ 40 ᴅᴀʏꜱ – ₹40 (₹1.00/day)
+▫️ᴛᴀᴘ ᴏɴ ᴛʜᴇ ✅ ᴠᴇʀɪꜰʏ ✅ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ
+ᴀᴄᴄᴇꜱꜱ ♾️ ꜰᴏʀ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ 🔄
+
+#ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ:- 1/3 🟡
+
+ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
+ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
+ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
+
+ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
+<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide 40 ᴅᴀʏꜱ – ₹40 (₹1.00/day)
 ---
 ᴀᴅᴍɪɴ :- @Barun_Dey   @onefighterarmy
 
