@@ -37,6 +37,7 @@ async def handle_new_group(client: Client, message: Message):
                 f"<b>Group ID:</b> <code>{chat_id}</code>"
             )
             await client.send_message(REQ_CHANNEL, text, reply_markup=buttons)
+            await client.send_message(request_channel, text, reply_markup=buttons)
 
 
 @app.on_callback_query(filters.regex("^(approve|reject)_"))
