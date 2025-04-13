@@ -2,6 +2,9 @@ import pymongo
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+API_ID = int(environ.get('API_ID', '25251875'))
+API_HASH = environ.get('API_HASH', '9f413b540c859573a91299d252e6e389')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8057778876:AAH8j1gFYHgRvi-bsnhf0HQPrAO72NUCipk")
 DATABASE_URI = "mongodb+srv://150rs-buy-Barun-dey:150rs-buy-Barun-dey@cluster0.skj2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 ADMIN_IDS = [7348205141]
 LOG_CHANNEL = -1002497411601
