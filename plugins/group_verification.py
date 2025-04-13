@@ -1,64 +1,81 @@
-import json
-import os
+import pymongo
 from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from bot import JisshuBot as app  # <- Correct this import
-from info import REQ_CHANNEL  # Make sure to define this in config.py
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# Load approved group IDs from file
-APPROVED_FILE = "approved_groups.json"
-approved_groups = set()
+# -------------------- CONFIG --------------------
+API_ID = 123456  # <-- Replace with your API ID
+API_HASH = "your_api_hash"  # <-- Replace with your API HASH
+BOT_TOKEN = "your_bot_token"  # <-- Replace with your bot token
 
-if os.path.exists(APPROVED_FILE):
-    with open(APPROVED_FILE, "r") as f:
-        try:
-            approved_groups = set(json.load(f))
-        except Exception:
-            approved_groups = set()
+DATABASE_URI = "mongodb+srv://150rs-buy-Barun-dey:150rs-buy-Barun-dey@cluster0.skj2m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+ADMIN_IDS = [7348205141]
+LOG_CHANNEL = -1002497411601
 
-def save_groups():
-    with open(APPROVED_FILE, "w") as f:
-        json.dump(list(approved_groups), f)
+# -------------------- DATABASE --------------------
+mongo_client = pymongo.MongoClient(DATABASE_URI)
+db = mongo_client["VpsBot"]
+approved_groups = db.approved_groups
 
+def is_group_approved(group_id: int) -> bool:
+    return approved_groups.find_one({"group_id": group_id}) is not None
 
-@app.on_message(filters.new_chat_members)
-async def handle_new_group(client: Client, message: Message):
-    for member in message.new_chat_members:
-        if member.id == (await client.get_me()).id:
-            chat_id = message.chat.id
-            chat_title = message.chat.title
-            buttons = InlineKeyboardMarkup([
-                [InlineKeyboardButton("✅ Approve", callback_data=f"approve_{chat_id}")],
-                [InlineKeyboardButton("❌ Reject", callback_data=f"reject_{chat_id}")]
-            ])
-            text = (
-                "🆕 <b>New Group Added</b>\n\n"
-                f"<b>Group Name:</b> {chat_title}\n"
-                f"<b>Group ID:</b> <code>{chat_id}</code>"
-            )
-            await client.send_message(REQ_CHANNEL, text, reply_markup=buttons)
-            await client.send_message(request_channel, text, reply_markup=buttons)
+def add_approved_group(group_id: int):
+    if not is_group_approved(group_id):
+        approved_groups.insert_one({"group_id": group_id})
 
+# -------------------- BOT CLIENT --------------------
+app = Client("strict_group_verifier_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-@app.on_callback_query(filters.regex("^(approve|reject)_"))
-async def handle_group_verification(client: Client, query: CallbackQuery):
-    action, group_id = query.data.split("_")
-    group_id = int(group_id)
+# -------------------- GROUP JOIN HANDLER --------------------
+@app.on_my_chat_member()
+async def on_group_join(client, message):
+    if message.chat.type in ["group", "supergroup"] and message.new_chat_member.status == "member":
+        group_id = message.chat.id
+        group_name = message.chat.title
 
-    if action == "approve":
-        approved_groups.add(group_id)
-        save_groups()
-        await query.edit_message_text(f"✅ Group <code>{group_id}</code> approved.")
-        await query.answer("Approved.")
-    else:
-        await query.edit_message_text(f"❌ Group <code>{group_id}</code> rejected.")
-        await query.answer("Rejected.")
+        if is_group_approved(group_id):
+            return
 
+        approve_button = InlineKeyboardMarkup(
+            [[InlineKeyboardButton("✅ Approve Group", callback_data=f"approve:{group_id}")]]
+        )
 
-@app.on_message(filters.group & filters.command(["start", "help", "id", "alive"]))
-async def verify_group_commands(client: Client, message: Message):
-    if message.chat.id not in approved_groups:
-        await message.reply("⛔ This group is not approved to use this bot. Please wait for manual approval.")
+        await client.send_message(
+            LOG_CHANNEL,
+            f"📢 **New Group Joined**\n\n"
+            f"**Group Name:** {group_name}\n"
+            f"**Group ID:** `{group_id}`\n\n"
+            f"Click the button below to approve this group:",
+            reply_markup=approve_button
+        )
+
+# -------------------- APPROVAL CALLBACK --------------------
+@app.on_callback_query(filters.regex(r"^approve:(-?\d+)$"))
+async def approve_callback(client, callback_query):
+    user_id = callback_query.from_user.id
+    if user_id not in ADMIN_IDS:
+        await callback_query.answer("You are not authorized to approve groups.", show_alert=True)
         return
-    # Allow actual command functionality here if needed
-    await message.reply("✅ This group is approved to use the bot!")
+
+    group_id = int(callback_query.data.split(":")[1])
+    add_approved_group(group_id)
+
+    await callback_query.answer("Group approved!", show_alert=True)
+    await callback_query.edit_message_text(f"✅ Group `{group_id}` has been approved successfully.")
+
+# -------------------- MESSAGE FILTER: ALLOW ONLY APPROVED GROUPS --------------------
+@app.on_message(filters.group)
+async def group_message_handler(client, message):
+    group_id = message.chat.id
+
+    if not is_group_approved(group_id):
+        return  # Silent mode: no response at all
+
+    # Example command
+    if message.text and message.text.startswith("/start"):
+        await message.reply("✅ This group is approved. Bot is active.")
+
+# -------------------- BOT START --------------------
+if __name__ == "__main__":
+    print("Bot is running...")
+    app.run()
