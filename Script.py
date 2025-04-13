@@ -181,7 +181,7 @@ User - {}"""
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
 ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</b>"""
+<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
 
     SECOND_VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -200,8 +200,7 @@ User - {}"""
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
 ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide
-</b>"""
+<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
 
     THIRDT_VERIFY_COMPLETE_TEXT= """<b>👋 ʜᴇʏ {},
     
