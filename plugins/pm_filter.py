@@ -1439,9 +1439,9 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         await searching_msg.delete()
         if not files:
             await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
-            g = await message.reply_text(text=f"Hello `{message.from_user.first_name}` 🙂. \n\n **🎬 𝗣𝗟𝗘𝗔𝗦𝗘 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗙𝗢𝗥𝗠𝗔𝗧 𝗕𝗘𝗟𝗢𝗪:** \n👇👇\n› ᴍᴀʀᴄᴏ 2024 ✅ \n› ᴍᴀʀᴄᴏ ✅\n› ᴍᴀʀᴄᴏ ᴍᴏᴠɪᴇ ❌\n› ᴍᴀʀᴄᴏ ʜɪɴᴅɪ ᴅᴜʙʙᴇᴅ ❌")
-            await asyncio.sleep(4)
-            await g.delete()
+          #  g = await message.reply_text(text=f"Hello `{message.from_user.first_name}` 🙂. \n\n **🎬 𝗣𝗟𝗘𝗔𝗦𝗘 𝗨𝗦𝗘 𝗧𝗛𝗘 𝗙𝗢𝗥𝗠𝗔𝗧 𝗕𝗘𝗟𝗢𝗪:** \n👇👇\n› ᴍᴀʀᴄᴏ 2024 ✅ \n› ᴍᴀʀᴄᴏ ✅\n› ᴍᴀʀᴄᴏ ᴍᴏᴠɪᴇ ❌\n› ᴍᴀʀᴄᴏ ʜɪɴᴅɪ ᴅᴜʙʙᴇᴅ ❌")
+         #   await asyncio.sleep(4)
+        #    await g.delete()
             if settings["spell_check"]:
                 ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
                 is_misspelled = await ai_spell_check(search)
