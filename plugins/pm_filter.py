@@ -1443,8 +1443,8 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
          #   await asyncio.sleep(4)
         #    await g.delete()
             if settings["spell_check"]:
-              llu = ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
-		await asyncio.sleep(2)
+                llu = ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
+                await asyncio.sleep(2)
                 await llu.delete()
                 is_misspelled = await ai_spell_check(search)
                 if is_misspelled:
