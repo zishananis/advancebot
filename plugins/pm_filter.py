@@ -18,7 +18,7 @@ import traceback
 from fuzzywuzzy import process
 
 import os
-req_channel = int(os.environ.get('REQ_CHANNEL','-1002548035418'))
+req_channel = int(os.environ.get('REQ_CHANNEL','-1002692803410'))
 
 BUTTONS = {}
 FILES_ID = {}
