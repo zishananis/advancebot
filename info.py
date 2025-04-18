@@ -24,7 +24,7 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002157033795'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002263289884 -1002400162074 -1002148375787').split()]
 #---------------------------------------------------------------
-#---------------------------------------------------------------
+#---------------------------------------------------------------#kdj
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "ALEXA99")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
