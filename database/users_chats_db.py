@@ -5,10 +5,10 @@ from info import SETTINGS, IS_PM_SEARCH, IS_SEND_MOVIE_UPDATE, PREMIUM_POINT,REF
 # from utils import get_seconds
 client = AsyncIOMotorClient(DATABASE_URI)
 mydb = client[DATABASE_NAME]
-client2 = AsyncIOMotorClient(SECOND_DATABASE_URL)
-mydb2 = client2[SECOND_DATABASE_NAME]  # Use the name of the second database
+#client2 = AsyncIOMotorClient(SECOND_DATABASE_URL)
+#mydb2 = client2[SECOND_DATABASE_NAME]  # Use the name of the second database
 fsubs = client['fsubs']
-fsubs2 = client2['fsubs']
+#fsubs2 = client2['fsubs']
 class Database:
     default = SETTINGS.copy()
     def __init__(self):
