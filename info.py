@@ -13,20 +13,20 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '25251875'))
-API_HASH = environ.get('API_HASH', '9f413b540c859573a91299d252e6e389')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8075098988 7348205141').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/onefighterarmy") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002157033795'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002148375787').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7259766556 7336971189 7348205141').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/ZaraflixAdmin") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002642371814'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+OuVU2Bl2j8Y4Nzk1')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002642371814 -1002148375787').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------#kdj
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "ALEXA99")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #SECOND_DATABASE_URI = environ.get('SECOND_DATABASE_URI', "")
 #SECOND_DATABASE_NAME = environ.get('SECOND_DATABASE_NAME', "SECOND_DB")
@@ -37,26 +37,26 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002563991753')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1004794174488'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002692803410') # If anyone sends a request message to your bot, you will get it in this channel.
+auth_channel = environ.get('AUTH_CHANNEL', '0')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002609213044'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002609213044') # If anyone sends a request message to your bot, you will get it in this channel.
 REQ_CHANNEL = environ.get('REQ_CHANNEL','-1002692803410')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002356533243')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '') #Support group link ( make sure bot is admin )
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002609213044')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Zaraflix') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 #---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/howtoverify0001")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/howtoverify0001")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/howtoverify0001")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/Zaraflix_Movie/2")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/Zaraflix_Movie/2")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/Zaraflix_Movie/2")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "e0b993ab824859c3375b05a636c32f5b61d528d2")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'onylinks.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "e0b993ab824859c3375b05a636c32f5b61d528d2")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'onylinks.com')
-SHORTENER_API3 = environ.get("SHORTENER_API3", "e0b993ab824859c3375b05a636c32f5b61d528d2")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'onylinks.com')
+SHORTENER_API = environ.get("SHORTENER_API", "ec422b5d760c01bbb755208935a9d21b461fdca5")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'yummyurl.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "ec422b5d760c01bbb755208935a9d21b461fdca5")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'yummyurl.com')
+SHORTENER_API3 = environ.get("SHORTENER_API3", "ec422b5d760c01bbb755208935a9d21b461fdca5")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'yummyurl.com')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
@@ -73,10 +73,10 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://envs.sh/THX.jpg https://envs.sh/THX.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://i.ibb.co/r2ghxGyc/image.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
-REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/YLm.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/3dv.jpg')).split()
+REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
+PAYPICS = (environ.get('PAYPICS', 'https://i.ibb.co/VpMNZDp9/image.jpg')).split()
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- - 1 Days = ₹10  (₹10/day)\n─────────────────\n- 5 Days = ₹15  (₹3/day)\n─────────────────\n- 15 Days = ₹35  (₹2.33/day)\n─────────────────\n- 30 Days = ₹55  (₹1.83/day)\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>dbarun326@okhdfcbank</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n💢 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ owner id 👉@Barun_Dey</b>')
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/3dv.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡", "🥳"]
