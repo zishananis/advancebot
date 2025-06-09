@@ -1439,7 +1439,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         await searching_msg.delete()
         if not files:
             await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
-           g = await message.reply_text(text=f"""Your File Not Found in Database 🚫"""
+            await message.reply_text(text=f"""Your File Not Found in Database 🚫""")
             
 	    
           #  g = await message.reply_text(
