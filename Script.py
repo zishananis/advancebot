@@ -261,7 +261,7 @@ verified_{}_completed"""
 ▫️ 40 ᴅᴀʏꜱ – ₹40 (₹1.00/day)
 ---
 
-🆔 UPI ɪᴅ ➩ <code>dbarun326@okhdfcbank</code> [ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ]
+🆔 UPI ɪᴅ ➩ <code>dhananjay9426@axl</code> [ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ]
  
 ⛽️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ: /myplan
 
@@ -286,7 +286,7 @@ verified_{}_completed"""
 ▫️ 40 ᴅᴀʏꜱ – ₹40 (₹1.00/day)
 ---
 
-🆔 UPI ɪᴅ ➩ <code>dbarun326@okhdfcbank</code> [ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ]
+🆔 UPI ɪᴅ ➩ <code>dhananjay9426@axl</code> [ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ]
  
 ⛽️ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ: /myplan
 
