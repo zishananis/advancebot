@@ -162,7 +162,7 @@ User - {}"""
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
 ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
+<a href="https://t.me/Zaraflix_Movie/2">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
 
     VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -183,7 +183,7 @@ User - {}"""
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
 ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
+<a href="https://t.me/Zaraflix_Movie/2">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
 
     SECOND_VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -204,7 +204,7 @@ User - {}"""
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
 
 ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/openlinksformovie">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
+<a href="https://t.me/Zaraflix_Movie/2">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
 
     THIRDT_VERIFY_COMPLETE_TEXT= """<b>👋 ʜᴇʏ {},
     
@@ -239,9 +239,7 @@ User - {}"""
 ▫️ 15 ᴅᴀʏꜱ – ₹25 (₹1.67/day)
 ▫️ 30 ᴅᴀʏꜱ – ₹35 (₹1.17/day)
 ---
-ᴀᴅᴍɪɴ :- @Barun_Dey   @onefighterarmy
-
-<a href="https://t.me/MovieProofs">🏷️ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ᴘʀᴏᴏꜰ</a>
+ᴀᴅᴍɪɴ :- @ZaraflixAdmin_Bot
 
 💢 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.
 ⏳ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ᴀ ꜰᴇᴡ ᴍɪɴᴜᴛᴇꜱ ꜰᴏʀ ᴀᴄᴛɪᴠᴀᴛɪᴏɴ.""    
