@@ -160,9 +160,7 @@ User - {}"""
 ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
 ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
-
-ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/Zaraflix_Movie/2">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
+</b>"""
 
     VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -181,9 +179,7 @@ User - {}"""
 ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
 ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
-
-ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/Zaraflix_Movie/2">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
+</b>"""
 
     SECOND_VERIFY_COMPLETE_TEXT = """<b>👋 ʜᴇʏ {},
 
@@ -202,9 +198,7 @@ User - {}"""
 ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 📁 ᴡɪᴛʜᴏᴜᴛ 
 ᴀɴʏ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴꜱ ❌ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ 
 ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ 🤖💳
-
-ᴛᴜᴛᴏʀɪᴀʟ 📚 :-
-<a href="https://t.me/Zaraflix_Movie/2">🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide \n🔗 Step-by-Step Guide</a></b>"""
+</b>"""
 
     THIRDT_VERIFY_COMPLETE_TEXT= """<b>👋 ʜᴇʏ {},
     
@@ -217,7 +211,7 @@ User - {}"""
 ⚡️ ɴᴀᴍᴇ:- {} [ <code>{}</code> ] 
 📆 ᴅᴀᴛᴇ:- <code>{} </code></b>
 
-#verified_{}_completed"""
+verified_{}_completed"""
 
 
     MOVIES_UPDATE_TXT = """<b>#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅
