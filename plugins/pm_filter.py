@@ -1661,7 +1661,7 @@ async def advantage_spell_chok(message):
         movies = await get_poster(search, bulk=True)
     except:
         k = await message.reply(script.I_CUDNT.format(message.from_user.mention))
-        await asyncio.sleep(4)
+        await asyncio.sleep(60)
         await k.delete()
         try:
             await message.delete()
@@ -1674,7 +1674,7 @@ async def advantage_spell_chok(message):
             InlineKeyboardButton("🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={google}")
         ]]
         k = await message.reply_text(text=script.I_CUDNT.format(search), reply_markup=InlineKeyboardMarkup(button))
-        await asyncio.sleep(4)
+        await asyncio.sleep(60)
         await k.delete()
         try:
             await message.delete()
