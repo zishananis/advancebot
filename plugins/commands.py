@@ -188,16 +188,16 @@ async def start(client:Client, message):
          #       newPoint = await db.get_point(refUserId)
              if AUTH_CHANNEL and await is_req_subscribed(client, message):
                         buttons = [[
-                            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton(' Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅꜱ 💠', url=f'https://t.me/share/url?url=Check%20Out%20This%20Movie%20Bot%20🍿%0A🎬%20Zaraflix%20–%20Free%20Movie%20%26%20Web%20Series!!%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot')
                         ],[
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                        ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
-                        ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                     #       InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                     #   ],[
+                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans')
+                      #      InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                   #     ],[
+                   #         InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
+                   #         InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
                      #   m=await message.reply_sticker("CAACAgUAAxkBAAKMgWdK--u7cCK_CGSxqpwf5gkgMzyNAAKrBAACvu-4V0dQs1WLoficNgQ") 
@@ -217,16 +217,16 @@ async def start(client:Client, message):
             pass
     if len(message.command) != 2:
         buttons = [[
-                            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton('💠 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅꜱ 💠', url=f'https://t.me/share/url?url=Check%20Out%20This%20Movie%20Bot%20🍿%0A🎬%20Zaraflix%20–%20Free%20Movie%20%26%20Web%20Series!!%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot')
                         ],[
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                        ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
-                        ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                        #    InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                      #  ],[
+                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans')
+                       #     InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                       # ],[
+                      #      InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
+                       #     InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
      #   m=await message.reply_sticker("CAACAgUAAxkBAAKMgWdK--u7cCK_CGSxqpwf5gkgMzyNAAKrBAACvu-4V0dQs1WLoficNgQ") 
@@ -279,16 +279,16 @@ async def start(client:Client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('💠 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅꜱ 💠', url=f'https://t.me/share/url?url=Check%20Out%20This%20Movie%20Bot%20🍿%0A🎬%20Zaraflix%20–%20Free%20Movie%20%26%20Web%20Series!!%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot')
                         ],[
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                        ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                            InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
-                        ],[
-                            InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                            InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                      #      InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+                  #      ],[
+                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans')
+                  #          InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                   #     ],[
+                  #          InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
+                   #         InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
