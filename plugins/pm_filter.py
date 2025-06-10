@@ -815,16 +815,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "start":
         buttons = [[
-                InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                InlineKeyboardButton('💠 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅꜱ 💠', url=f'https://t.me/share/url?url=Check%20Out%20This%20Movie%20Bot%20🍿%0A🎬%20Zaraflix%20–%20Free%20Movie%20%26%20Web%20Series!!%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot')
                 ],[
                 InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
-                InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                ],[
-                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
-                ],[
-                InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+              #  InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
+             #   ],[
+                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans')
+             #   InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+             #   ],[
+             #   InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
+            #    InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                 ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
