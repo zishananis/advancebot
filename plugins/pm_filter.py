@@ -704,6 +704,31 @@ async def advantage_spoll_choker(bot, query):
         except:
             pass
 
+@Client.on_callback_query(filters.regex(r"^notify_user_"))
+async def handle_notify_user_callback(client, query):
+    data = query.data.split(":")
+    action = data[0]  # jaise 'notify_userupl'
+    user_id = int(data[1])
+    movie_name = data[2]
+    user = query.from_user.first_name
+    movie_name_url = quote_plus(movie_name)
+    quality = "480p/720p/1080p"
+
+    if action == "notify_user_req_rcvd":
+        await client.send_message(user_id, f"📜Hey {user}\n\n🎬Your movie **{movie_name}**\n\n📽️Quality :- {quality}\n\n<blockquote>request received✅</blockquote>")
+    elif action == "notify_user_uplo":
+        await client.send_message(user_id, f"📜Hey {user}\n\n🎬Your movie **{movie_name}**\n\n📽️Quality :- {quality}\n\n<blockquote>Updated ✅</blockquote>")
+    elif action == "notify_user_alrupl":
+        await client.send_message(user_id, f"📜Hey {user}\n\n🎬Your movie **{movie_name}**\n\n📽️Quality :- {quality}\n\n<blockquote>already updated ✅</blockquote>")
+    elif action == "notify_user_spelling_error":
+        await client.send_message(user_id, f"📜Hey {user}\n\n🎬Your movie <b>{movie_name}</b>\n\n📽️Quality :- {quality}\n\nSpelling is wrong ✅\n\nGo to Google and check your spelling: <a href='https://www.google.com/search?q={movie_name_url}'>Google 🔍</a>", parse_mode="html")
+    elif action == "notify_user_not_avail":
+        await client.send_message(user_id, f"📜Hey {user}\n\n🎬Your movie **{movie_name}**\n\n📽️Quality :- {quality}\n\n<blockquote>Not available 🥴</blockquote>")
+   # elif action == "notify_user_req_rejected":
+    #    await client.send_message(user_id, f"✅ Your Requested Movie is Uploaded:\n **📋📦Movie**: `{movie_name}`")
+    
+    await query.answer("Notification sent!")  # user ko short popup bhi milega
+
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
@@ -1438,7 +1463,13 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         files, offset, total_results = await get_search_results(search)
         await searching_msg.delete()
         if not files:
-            await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n"f"📝**CONTENT NAME** : `{search}`\n"f"**REQUESTED BY** : {message.from_user.first_name}\n"f"**USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
+            await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",
+                                          reply_markup=InlineKeyboardMarkup([
+                                                                           [InlineKeyboardButton(text=f"🤞Request Recieved", callback_data=f"notify_user_req_rcvd:{user_id}:{requested_movie}")],
+                                                                           [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_user_uplo:{user_id}:{requested_movie}")],
+                                                                           [InlineKeyboardButton(text=f"⚡Already Upl..", callback_data=f"notify_user_alrupl:{user_id}:{requested_movie}"),InlineKeyboardButton("🖊Spell Error", callback_data=f"notify_user_spelling_error:{user_id}:{requested_movie}")],
+                                                                           [InlineKeyboardButton(text=f"😒Not Available", callback_data=f"notify_user_not_avail:{user_id}:{requested_movie}")],
+                                                                           ]))
             if settings["spell_check"]:
                 ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
                 is_misspelled = await ai_spell_check(search)
