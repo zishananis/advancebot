@@ -1439,30 +1439,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         await searching_msg.delete()
         if not files:
             await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID : **{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
-            g = await message.reply_text(text=f"""Your File Not Found in Database 🚫""")
-            await asyncio.sleep(6)
-            await g.delete()
-            
-	    
-          #  g = await message.reply_text(
-    #text=f"""👋 Hello, `{message.from_user.first_name}`!
-
-#**🎬 Please follow the format below to search:**  
-#━━━━━━━━━━━━━━━━━━━━  
-#✅ Correct Formats:  
-#• `{search} 2024`  
-#• `{search}`
-
-#❌ Incorrect Formats:  
-#• `{search} movie`  
-#• `{search} hindi dubbed`  
-#━━━━━━━━━━━━━━━━━━━━  
-#_Keep it simple — just the name, optionally with the year._  
-#""",
-   # disable_web_page_preview=True
-#)
-           # await asyncio.sleep(4)
-        #    await g.delete()
+          
             if settings["spell_check"]:
                 llu = ai_sts = await msg.reply_text(f'ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ...')
                 await asyncio.sleep(2)
@@ -1473,6 +1450,9 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                     await asyncio.sleep(2)
                     msg.text = is_misspelled
                     await ai_sts.delete()
+                g = await message.reply_text(text=f"""Your File Not Found in Database 🚫""")
+                    await asyncio.sleep(6)
+                    await g.delete()
                     return await auto_filter(client, msg)
                 #    await client.send_message(req_channel,f"🦋 **#REQUESTED_CONTENT** 🦋,\n\n📝**CONTENT NAME** : `{search}`\n**REQUESTED BY** : {message.from_user.first_name}\n **USER ID :**{message.from_user.id}\n\n🗃️",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Mark as Done 🔺", callback_data="close_data")]]))
                # await ai_sts.delete()
