@@ -1457,6 +1457,8 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
     if not spoll:
         message = msg
         search = message.text
+        requested_movie = search.strip()
+        user_id = message.from_user.id
         chat_id = message.chat.id
         settings = await get_settings(chat_id , pm_mode=pm_mode)
         searching_msg = await msg.reply_text(f'🔎 sᴇᴀʀᴄʜɪɴɢ {search}')
