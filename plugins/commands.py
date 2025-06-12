@@ -190,7 +190,7 @@ async def start(client:Client, message):
                         buttons = [[
                             InlineKeyboardButton('✨ Mᴏᴠɪᴇ Rᴇǫᴜᴇꜱᴛ Gʀᴏᴜᴘ ✨', url=f'https://t.me/+tTGXrEycpI85ZTM1') 
                         ],[
-                            InlineKeyboardButton(' Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅꜱ 💠', url=f'https://t.me/share/url?url=Check%20Out%20This%20Movie%20Bot%20🍿%0A🎬%20Zaraflix%20–%20Free%20Movie%20%26%20Web%20Series!!%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot')
+                            InlineKeyboardButton('💠 Sʜᴀʀᴇ Wɪᴛʜ Fʀɪᴇɴᴅꜱ 💠', url=f'https://t.me/share/url?url=Check%20Out%20This%20Movie%20Bot%20🍿%0A🎬%20Zaraflix%20–%20Free%20Movie%20%26%20Web%20Series!!%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot%0A👉%20https://t.me/ZaraflixBot')
                         ],[
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
                      #       InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
