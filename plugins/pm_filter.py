@@ -1697,7 +1697,7 @@ async def advantage_spell_chok(message):
         [InlineKeyboardButton(text="🚫 ᴄʟᴏsᴇ 🚫", callback_data='close_data')]
     )
     d = await message.reply_text(text=script.CUDNT_FND.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=message.id)
-    await asyncio.sleep(4)
+    await asyncio.sleep(10)
     await d.delete()
     try:
         await message.delete()
